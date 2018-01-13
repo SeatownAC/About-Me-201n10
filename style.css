@@ -1,0 +1,16 @@
+* {
+    font-family: comic 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* background-color: bisque; */
+}
+
+h1 {
+    color: greenyellow;
+    text-align: center;
+    font-size: 120px;
+
+   
+}
+
+body {
+    background-image: url("polka-dots.png");
+  }
