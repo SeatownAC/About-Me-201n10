@@ -78,9 +78,12 @@ for (i=0; i<4;i++) {
    if(answer == guess) {
        alert("You guessed right!")
        break;
-   }else{
-       guess = prompt("Try again")
-        }
+   }else if (parseInt(guess) < answer) {
+    guess = prompt("Try again, guess was too low, you now have" + (i + 1) + "guesses used");
+    }else if (parseInt(guess) > answer) {
+     guess = prompt("Try again, guess too high");
+    }
+    
    }
 
 
