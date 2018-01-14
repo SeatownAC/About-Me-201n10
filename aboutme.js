@@ -55,18 +55,27 @@ if (answer === 'no' || answer === 'n') {
     alert('If you don\'t know me by now...you will never, ever know me...(in my best Simply Red voice)');
 }
 
-var answer6 = prompt('Is my favorite dog breed Golden Retriever?', 'type yes or no').toLowerCase();
+var answer6 = prompt('What is my fav dog breed?').toLowerCase();
 
-alert('Yes, they are one of my favs, but I have others as well!');
 
 console.log(answer);
 
-var favDogBreeds = ['Golden Retriever', 'Labrador Retriever', 'Dachsunds'];
-alert(favDogBreeds);
+var favDogBreeds = ['Golden Retriever', 'Labrador Retriever', 'Dachsund'];
+
+var guesscorrect = false;
 
 for (var i = 0; i < favDogBreeds.length; i++) {
     console.log(favDogBreeds[i]);
+    
+    
+    if (favDogBreeds[i].toLowerCase() == answer6){
+        guesscorrect = true;
+        alert('Yes, that is one of my favs, along with ' + favDogBreeds)
+    }
+
 }
+    
+
 
 
 alert('I have a number in mind,somewhere between 1-10. You have 4 guesses.');
