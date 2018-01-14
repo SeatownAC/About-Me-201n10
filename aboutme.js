@@ -1,3 +1,4 @@
+
 'use strict';
 
 console.log ('Hi Console log!');
@@ -22,7 +23,7 @@ var answer2 = prompt('Am I a morning person?' , 'type yes or no').toLowerCase();
 
 console.log(answer);
 
-if (answer === 'no' || answer === 'n') {
+if (answer2 === 'no' || answer === 'n') {
     alert('You are correct! Mornings are THE WORST');
 } else {
     alert('I\'m beginning to question this friendship.');
@@ -53,6 +54,35 @@ if (answer === 'no' || answer === 'n') {
 } else {
     alert('If you don\'t know me by now...you will never, ever know me...(in my best Simply Red voice)');
 }
+
+var answer6 = prompt('Is my favorite dog breed Golden Retriever?', 'type yes or no').toLowerCase();
+
+alert('Yes, they are one of my favs, but I have others as well!');
+
+console.log(answer);
+
+var favDogBreeds = ['Golden Retriever', 'Labrador Retriever', 'Dachsunds'];
+alert(favDogBreeds);
+
+for (var i = 0; i < favDogBreeds.length; i++) {
+    console.log(favDogBreeds[i]);
+}
+
+
+var guess =  prompt("Guess how many states I visited in December?: ");   
+var number = ('4');
+    if (guess < '4') {
+        prompt("You've guessed too low!");
+    } else if (guess > '4') {
+        prompt("You've guessed too high!");
+    } else alert("Good Job!");
+            
+        
+
+
+
+
+
 
 
 
