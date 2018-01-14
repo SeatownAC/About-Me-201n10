@@ -74,14 +74,14 @@ alert('I have a number in mind,somewhere between 1-10. You have 4 guesses.');
 var answer = 3;
 var guess = prompt('What\'s your guess?');
 
-for (i=0; i<4;i++) {
+for (i=0; i<3;i++) {
    if(answer == guess) {
        alert("You guessed right!")
        break;
    }else if (parseInt(guess) < answer) {
-    guess = prompt("Try again, guess was too low, you now have" + (i + 1) + "guesses used");
+    guess = prompt("Try again, guess was too low, you now have " + (i + 1) + " guesses used");
     }else if (parseInt(guess) > answer) {
-     guess = prompt("Try again, guess too high");
+     guess = prompt("Try again, guess too high, you now have " + (i + 1) + " guesses used");
     }
     
    }
