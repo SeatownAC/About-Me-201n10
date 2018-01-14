@@ -69,17 +69,19 @@ for (var i = 0; i < favDogBreeds.length; i++) {
 }
 
 
-var guess =  prompt("Guess how many states I visited in December?: ");   
-var number = ('4');
-    if (guess < '4') {
-        prompt("You've guessed too low!");
-    } else if (guess > '4') {
-        prompt("You've guessed too high!");
-    } else alert("Good Job!");
-            
-        
+alert('I have a number in mind,somewhere between 1-10. You have 4 guesses.');
 
+var answer = 3;
+var guess = prompt('What\'s your guess?');
 
+for (i=0; i<4;i++) {
+   if(answer == guess) {
+       alert("You guessed right!")
+       break;
+   }else{
+       guess = prompt("Try again")
+        }
+   }
 
 
 
