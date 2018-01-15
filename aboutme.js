@@ -55,7 +55,7 @@ if (answer === 'no' || answer === 'n') {
     alert('If you don\'t know me by now...you will never, ever know me...(in my best Simply Red voice)');
 }
 
-var answer6 = prompt('What is my fav dog breed?').toLowerCase();
+
 
 
 console.log(answer);
@@ -64,16 +64,33 @@ var favDogBreeds = ['Golden Retriever', 'Labrador Retriever', 'Dachsund'];
 
 var guesscorrect = false;
 
-for (var i = 0; i < favDogBreeds.length; i++) {
-    console.log(favDogBreeds[i]);
-    
-    
-    if (favDogBreeds[i].toLowerCase() == answer6){
-        guesscorrect = true;
-        alert('Yes, that is one of my favs, along with ' + favDogBreeds)
+var questionAttempts = 0;
+
+while (questionAttempts < 6 && guesscorrect == false) {
+    var answer6 = prompt('What is my fav dog breed?').toLowerCase();
+    questionAttempts++;
+
+
+    for (var i = 0; i < favDogBreeds.length; i++) {
+        console.log(favDogBreeds[i]);
+        
+        
+        if (favDogBreeds[i].toLowerCase() == answer6){
+            guesscorrect = true;
+            alert('Yes, that is one of my favs, along with ' + favDogBreeds)
+        }
+
+
     }
 
+
+    if (guesscorrect == false) {
+        alert ("Wrong stupid!");
+
+    }
 }
+
+
     
 
 
