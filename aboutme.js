@@ -23,7 +23,7 @@ var answer2 = prompt('Am I a morning person?' , 'type yes or no').toLowerCase();
 
 console.log(answer);
 
-if (answer2 === 'no' || answer === 'n') {
+if (answer2 === 'no' || answer2 === 'n') {
     alert('You are correct! Mornings are THE WORST');
 } else {
     alert('I\'m beginning to question this friendship.');
@@ -31,9 +31,9 @@ if (answer2 === 'no' || answer === 'n') {
 
 var answer3 = prompt('Am I a great dancer?' , 'type yes or no').toLowerCase();
 
-console.log(answer);
+console.log(answer2);
 
-if (answer === 'yes' || answer === 'y') {
+if (answer3 === 'yes' || answer3 === 'y') {
     alert('Haha no! I mean, unless you consider Elaine from Seinfeld a good dancer');
 } else {
     alert('You are right! Just because I LIKE to dance does not mean I\'m good at it!');
@@ -41,7 +41,7 @@ if (answer === 'yes' || answer === 'y') {
 
 var answer4 = prompt('Is rap music one of my top 3 favorite genres?', 'type yes or no').toLowerCase();
 
-if (answer === 'yes' || answer === 'y') {
+if (answer4 === 'yes' || answer4 === 'y') {
     alert('Hell yes! Kendrick is more likley to be on repeat than anything else when I workout');
 } else {
     alert('It\'s like you don\'t even know me...');
@@ -49,7 +49,7 @@ if (answer === 'yes' || answer === 'y') {
 
 var answer5 = prompt('Am I great at Algebra, but kind of embarrased of being a math nerd so I don\'t tell people?').toLowerCase();
 
-if (answer === 'no' || answer === 'n') {
+if (answer5 === 'no' || answer5 === 'n') {
     alert('Yaaassss!!! I am terrible at math! Like seriously, what is a coefficient again? Makes my brain hurt');
 } else {
     alert('If you don\'t know me by now...you will never, ever know me...(in my best Simply Red voice)');
@@ -58,7 +58,7 @@ if (answer === 'no' || answer === 'n') {
 
 
 
-console.log(answer);
+console.log(answer5);
 
 var favDogBreeds = ['Golden Retriever', 'Labrador Retriever', 'Dachsund'];
 
