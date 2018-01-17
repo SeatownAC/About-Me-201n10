@@ -85,7 +85,7 @@ while (questionAttempts < 6 && guesscorrect == false) {
 
 
     if (guesscorrect == false) {
-        alert ("Wrong stupid!");
+        alert ("Nope, try again!");
 
     }
 }
